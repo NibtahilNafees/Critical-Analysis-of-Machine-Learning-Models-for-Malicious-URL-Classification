@@ -1,10 +1,10 @@
-# **🔍 Malicious URL Detection Using Machine Learning**  
+# ** Malicious URL Detection Using Machine Learning**  
 
-## **📌 Overview**  
+## ** Overview**  
 This project focuses on detecting **malicious URLs** by classifying them into five categories:  
 **Benign** | **Defacement** | **Phishing** | **Malware** | **Spam**  
 
-We implemented **Random Forest, XGBoost, and LSTM**, achieving a **maximum accuracy of 94.1%**.  
+We implemented **Random Forest, XGBoost, and CNN**, achieving a **maximum accuracy of 91.1%**.  
 
 ## **🗂️ Dataset**  
 - **Source:** Merged dataset containing **653,046 URLs**  
@@ -15,9 +15,9 @@ We implemented **Random Forest, XGBoost, and LSTM**, achieving a **maximum accur
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
 - **Scikit-learn** (Machine Learning Models)  
 - **XGBoost** (Gradient Boosting)  
-- **TensorFlow/Keras** (LSTM Model)  
+- **TensorFlow/Keras** (CNN Model)  
 
-## **🧩 Feature Engineering**  
+## ** Feature Engineering**  
 - **Structural Features**: URL length, subdomains, special characters  
 - **NLP Features**: Tokenized URL parts, TLD extraction  
 - **Path Analysis**: Query length, number of parameters  
@@ -26,9 +26,9 @@ We implemented **Random Forest, XGBoost, and LSTM**, achieving a **maximum accur
 
 | Model        | Accuracy | Notes |
 |-------------|----------|----------------|
-| **Random Forest** | 92.3% | Strong feature handling |
-| **XGBoost** | 94.1% | Best performance |
-| **LSTM** | 91.8% | Good for sequential learning |
+| **Random Forest** | 91.0% | Best performance |
+| **XGBoost** | 87.0% | Strong feature handling |
+| **CNN** | 80.80% | Worked well |
 
 🚫 **SVM was not used** due to difficulties in handling URL-based feature vectors.  
 🚀 **BERT was not included** to focus on traditional ML & deep learning methods.  
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 python train.py
 ```
 
-## **📌 Future Enhancements**  
+## ** Future Enhancements**  
 - ✅ **BERT/GPT-based URL classification**  
 - ✅ **Hybrid models (XGBoost + LSTM)**  
 - ✅ **Real-time deployment & detection**  
